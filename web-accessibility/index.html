@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Based on Hakim El Hattab's reveal.js" />
+    <meta
+      name="author"
+      content="Girl Develop It" />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
+
+    <!-- Update with GDI Course Name -->
+    <title>GDI Web Accessibility</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico" />
+
+    <!-- RevealJS CDN - Do Not Delete -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
+
+    <!-- GDI Custom Theme - Do Not Delete -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css" />
+
+    <!-- Theme for syntax highlighted code - Do Not Delete -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+
+    <!-- Add Course Custom Stylesheet if Applicable -->
+    <link
+      rel="stylesheet"
+      href="css/accesscustom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- Any section element in this container is displayed as a single slide -->
+      <!-- Do not delete slide instructions -->
+      <!---->
+      <!---->
+      <div class="slides">
+        <!-- Opening Slide -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="400px"
+            class="noborder" />
+          <br />
+          <h2 style="font-weight: bolder">Welcome to Girl Develop It</h2>
+        </section>
+
+        <!-- Course Title -->
+        <section>
+          <h2>Web Accessibility</h2>
+        </section>
+
+        <!-- Instructor Intro -->
+        <section>
+          <h3>Instructor Intro</h3>
+        </section>
+
+        <!-- OPTIONAL: TA Intro -->
+        <section>
+          <h3>TA Intro</h3>
+        </section>
+
+        <!-- Student Intros; IceBreakers, etc. -->
+        <section>
+          <h3>Student Intros or Ice Breaker</h3>
+        </section>
+
+        <!-- Course Goals -->
+        <section>
+          <h3>Course Goals</h3>
+        </section>
+
+        <!-- Course Agenda / Topics / Course Outline -->
+        <section>
+          <h3>Course Outline or Agenda</h3>
+        </section>
+
+        <!-- Before starting... -->
+        <section>
+          <h3>Before we start...</h3>
+          <ul>
+            <li>Display preferred name and/or pronoun</li>
+            <li>Don't be camera-shy 🙂</li>
+            <li>Participate and ask questions</li>
+            <li>Every question is important</li>
+            <li>Have fun!</li>
+          </ul>
+        </section>
+
+        <!-- Course Slides -->
+        <!-- Create as many new sections (slides) as needed -->
+        <!---->
+        <!---->
+        <!-- Slide / Content / Topic Name -->
+        <section>
+          <h3>Who can use your sites?</h3>
+          <img src="images/disabled-iphone.jpg" alt="Happy iPhone users"/>
+          <p class="credit">Photo credit: DeafTech News</p>
+        </section>
+
+        <section>
+          <h3>What is accessibility?</h3>
+          <ul>
+            <li>Accessibility is about making your sites useful to as many people as possible.</li>
+            <li>Accessibility is about overcoming barriers.</li>
+            <li>Accessibility is about helping your users.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Why worry?</h3>
+          <img src="images/accessdogs.jpg" alt="Dogs outside door, captioned 'We R UR community, beggin fer access'"/>
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/circulating/997909242/" target="_blank">circulating<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>Why make your sites accessible?</h3>
+          <ul>
+            <li class="fragment">Expand your potential audience!
+              <ul>
+                <li>85.3 million people in the US have a disability,</li>
+                <li>12.3 million people have a visual disability, and </li>
+                <li>17.1 million people have hearing disability (<a href="https://www.census.gov/content/dam/Census/library/publications/2018/demo/p70-152.pdf" target="_blank">source<span class="visuallyhidden"> opens in a new window</span></a>).</li>
+              </ul>
+            </li>
+            <li class="fragment">Be in compliance with legal guidelines, like Section 504/508 and WCAG.</li>
+            <li class="fragment">Avoid <a href="https://www.adatitleiii.com/2023/01/plaintiffs-set-a-new-record-for-website-accessibility-lawsuit-filings-in-2022/" target ="_blank">potential lawsuits<span class="visuallyhidden"> opens in a new window</span>.</a></li>
+            <li class="fragment">Help people get equal access.</li>
+          </ul>
+          <aside class="notes">
+            <p>Legal issues: Some sites, like Target, have been sued under the Americans with Disabilities Act (ADA)</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Types of Disability</h3>
+          <ul>
+            <li class="fragment">Visual disabilities: blind or low vision, color blind</li>
+            <li class="fragment">Hearing disabilities: deaf or hard of hearing</li>
+            <li class="fragment">Physical disabilities: Parkinson's, quadriplegic, epileptic</li>
+            <li class="fragment">Cognitive disabilities: dyslexia, ADHD, short term memory loss</li>
+            <li class="fragment">Also: Permanent, temporary, and situational</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What are barriers to access?</h3>
+          <img src="images/barrier.jpg" alt="Traffic barriers"/>
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/apoptotic/4299922931/" target ="_blank">sciencesque<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target = "_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">
+            <p>This is a good place to pause and ask students to come up with potential types website barriers that can affect people with disabilities.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Accessibility is for everyone!</h3>
+          <img src="images/curbcut.jpg" target="_blank" alt="Curb cut on sidewalk" />
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/firelizard5/8479806007/">Sylvia Pellicore</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">
+            <p>Ask if people recognize curb cut, then point out that while wheelchairs use them, so do strollers, people with luggage, etc.  Mention how accessibility can help the non-disabled as well.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Benefits of Accessibility</h3>
+          <ul>
+            <li>Curb cuts were designed for wheelchairs, but others use them. Similarly, accessibility features end up helping everyone.</li>
+            <li>Many times, good design practices create accessibility as a side effect.</li>
+            <li>Accessibility features, like good alt text, can improve your search engine placement.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Web Content Accessibility Guidelines</h3>
+          <ul>
+            <li class="fragment">An international set of guidlines for web accessibility</li>
+            <li class="fragment">The basis for Section 508, ADA, and EN 310 549</li>
+            <li class="fragment">Principles: Perceivable, Operable, Understandable, and Robust</li>
+            <li class="fragment">Versions: 2.0 (2008), 2.1 (2018), 2.2 (2023)</li>
+            <li class="fragment">Levels: A, AA, AAA</li>
+            <li class="fragment">Most companies go for 2.0 AA or 2.1 AA.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Accessibility Conformance Reports</h3>
+          <ul>
+            <li>Each software product should have regular audits.</li>
+            <li>Audit results are used in VPATs to generate ACRs.</li>
+            <li>Customers, especially government organizations, care about accessibility and ask about ACRs.</li>
+            <li>ACRs should be available through a company's Accessibility page.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Accessibility is a continuum</h3>
+          <ul>
+            <li>WCAG</li>
+            <li>Best Practices</li>
+            <li>User Research</li>
+          </ul>
+          <p>WCAG is the bare minimum for accessibility. We can do more.</p>
+        </section>
+
+        <section>
+          <h3>Visual disabilities</h3>
+          <img src="images/canes.jpg" alt="Blind pedestrians with white canes"/>
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/brailleinstitute/5169573221/" target ="_blank">Braille Institute<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target ="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>What assitive technology do people use?</h3>
+          <ul>
+            <li>Browser zoom</li>
+            <li>Browser magnification</li>
+            <li>High contrast displays</li>
+            <li>Screen readers</li>
+          </ul>
+          <aside class="notes">Important points:
+            <ul>
+              <li>Low vision is very common</li>
+              <li>Even people who are legally blind may have some residual vision</li>
+              <li>Screen readers are also useful for people with print disabilities, like dyslexia</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Screen reader demo</h3>
+          <aside class="notes">
+            <p>Choose a site with a complex nav menu, and show how long it takes to get through with a screen reader. I used CNN.com and NVDA for this demo, but any common screen reader will work.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Provide an alternate path</h3>
+          <img src="images/anotherpath.jpg" alt="Signs pointing to handicap-accessible routes" />
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/lng0004/7093675431/" target ="_blank">Linh H. Nguyen<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target ="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>Alt text</h3>
+          <ul>
+            <li class="fragment">Alternate text describes pictorial content in words.</li>
+            <li class="fragment">Pay attention to context.</li>
+            <li class="fragment">Try to keep the alt text to 140 characters or fewer.</li>
+            <li class="fragment">Describe the <em>function</em>, not the content.</li>
+            <li class="fragment">If an image is purely decorative, use <code>alt=""</code> to instruct a screen reader to skip it.</li>
+          </ul>
+<pre class="fragment"><code class="html">
+  &#60;img src="cats.jpg" alt="A tuxedo cat and a black 
+    cat curled up next to each other and sharing a cushion"&#62;
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Let's try it</h3>
+          <p>Provide alt text for the images on the <a href="https://girldevelopit.com/" target="_blank">GDI website<span class="visuallyhidden"> opens in a new window</span></a>.</p>
+        </section>
+
+        <section>
+          <h3>Other tips for screen readers</h3>
+          <ul>
+            <li class="fragment">Headings, skip links, and landmarks give users a way to navigate through a page.</li>
+            <li class="fragment">Content is more than just visual.</li>
+            <li class="fragment">External link indicators prevent unexpected page changes.</li>
+            <li class="fragment">Use tables for tabular data only.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Provide contrast</h3>
+          <img src="images/contrast.jpg" alt="Crosswalk with contrasting colors"/>
+          <p class="credit">Photo credit: <a href="https://commons.wikimedia.org/w/index.php?curid=10652358" target="_blank">Fongsaosfen<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>More on visual disabilities</h3>
+          <ul>
+            <li class="fragment">Have a <em>minimum</em> of contrast ratio of 4.5:1 for normal text and 3:1 for large text and graphics. (<a href="http://webaim.org/resources/contrastchecker/" target="_blank">Checker<span class="visuallyhidden"> opens in a new window</span></a>)</li>
+            <li class="fragment">If you use color to indicate something, also use another indicator. For example, underline links or mark a required field with an asterisk.</li>
+            <li class="fragment">Red/green color blindness is the most common, so avoid green on red.</li>
+            <li class="fragment">Include color names in product descriptions and show examples (<a href="http://24ways.org/2012/colour-accessibility/" target="_blank">article<span class="visuallyhidden"> opens in a new window</span></a>)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Color Contrast Demo</h3>
+          <p><a href="https://www.tpgi.com/color-contrast-checker/" target="_blank">Colour Contrast Analyser<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">
+            <p>Colour Contrast Analyser demo</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Automatic captions can be problematic</h3>
+          <img src="images/bad-captions.png" alt="YouTube video with nonsense captions: Look at your help literally now you can link your data from hell"/>
+          <p class="credit">Credit: Sylvia Pellicore, from YouTube</p>
+          <aside class="notes">
+            <p>The original audio in that clip was "link your data from <strong>health</strong> care apps"</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Hearing disabilities</h3>
+          <ul>
+            <li class="fragment">Most deaf or hard of hearing people have limited difficulty with web accessibility.</li>
+            <li class="fragment">Provide captions or transcripts for multimedia.</li>
+            <li class="fragment">Don't rely on sounds to convey information, like an "alert" noise.</li>
+            <li class="fragment">80% of people who use captions don't have a hearing disability. <a href="https://www.newtontech.net/en/blog/23083-captions-increase-viewership-accessibility-and-reach/" target="_blank">(source)<span class="visuallyhidden"> opens in a new window</span></a></li>
+          </ul>
+          <aside class="notes">
+            <p>Paid captioning services are relatively inexpensive, about $1.50 to $2.50 a minute.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Video</h3>
+          <p><a href="https://www.youtube.com/watch?v=SL7YSqlEd8k" target="_blank">Apple – Accessibility – Sady (with Audio Descriptions)</a></p>
+        </section>
+
+        <section>
+          <h3>Physical disabilities</h3>
+          <ul>
+            <li class="fragment">Many users with limited mobility interact with the screen via keyboard.</li>
+            <li class="fragment">Other users use a mouse, but have trouble with fine motor control.</li>
+            <li class="fragment">All actions must be doable by keyboard.</li>
+            <li class="fragment">Make clickable elements large, and put space between them.</li>
+            <li class="fragment">Animations with rapid flickers are not only annoying, they can trigger epileptic seizures.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Lose the Mouse</h3>
+          <img src="images/mouse.jpg" alt="Cat steals mouse" />
+          <p class="credit">Photo credit: <a href="http://ipkitten.blogspot.com/2013/07/the-patent-legacy-of-computer-mouse.html" target="_blank">The IP Kat<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>Don't overwhelm</h3>
+          <img src="images/toomanysigns.jpg" alt="Sign post with multiple signs"/>
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/thomashawk/2402598275/" target="_blank">Thomas Hawk<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>Provide plenty of time</h3>
+          <img src="images/clock.jpg" alt="Alarm clock"/>
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/beth19/4721798240/" target="_blank">Bethan<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank"]>cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>CAPTCHAs don't just catch robots</h3>
+          <img src="images/confusedrobot.jpg" alt="Confused robot"/>
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/baboon/3946055/" target="_blank">baboon<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+          <h3>Dealing with cognitive disabilities</h3>
+          <ul>
+            <li class="fragment">Cognitive accessibility practices make it easier for people to process information.</li>
+            <li class="fragment">Use clear, simple language; minimize mental load.</li>
+            <li class="fragment">Respect reduced motion preferences and let people pause or hide motion.</li>
+            <li class="fragment">If you have timed content, provide controls or allow users to extend time.</li>
+            <li class="fragment">CAPTCHAs are difficult for users with learning disabilities. Consider <a href="https://www.w3.org/TR/turingtest/#noninteract" target="_blank">alternative methods<span class="visuallyhidden"> opens in a new window</span></a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Let's try it</h3>
+          <p>Visit a site you use frequently. Identify one accessibility feature that is part of the site and one feature you would change.</p>
+          <aside class="notes">
+            <p>Students can do this activity alone or in pairs, depending on the size of the class.  If people get stuck, recommend:</p>
+            <ul>
+              <li>http://www.nytimes.com/</li>
+              <li>http://www.ebay.com/</li>
+              <li>http://facebook.com</li>
+            </ul>
+            <p>Depending on time, you can have each group present on what they found.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Break</h3>
+          <img src="images/handicappedlove.jpg" alt="Disabled parking symbol with a heart" />
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/samfelder/115576714/" target="_blank">Sam Felder<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <section>
+					<h2 style="font-size: 1.3em">Home pages with most common WCAG failures (% of home pages)</h2>
+					<div id="webaim-survey-problematic-items" style="background: url(images/webaim-million.png) no-repeat center top; background-size: 75% auto; padding-top: 50%; width: 100%;">
+						<ul class="visuallyhidden">
+							<li>83.6% - Low contrast text</li>
+              <li>58.2% - Missing alternative text</li>
+              <li>50.1% - Empty links</li>
+              <li>45.9% - Missing form labels</li>
+              <li>27.5% - Empty buttons</li>
+              <li>18.6% - Missing document language</li>
+						</ul>
+					</div>
+					<p>Source: <a href="https://webaim.org/projects/million/#errors" target="_blank" title="Link opens in a new window">The 2023 WebAIM Million report <span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">Introduce the WebAIM Screen Reader survey and show the common problems.</aside>
+				</section>
+
+        <section>
+					<h2 style="font-size: 1.3em">Relative cost to fix bugs, based on time of detection</h2>
+					<div id="bug-fix-costs" style="background: url(images/bug-fix-costs.png) no-repeat center top; background-size: 75% auto; padding-top: 50%; width: 100%;">
+						<ul class="visuallyhidden">
+							<li>1x - Requirements/Architecture</li>
+              <li>5x - Coding</li>
+              <li>10x - Integration/Component Testing</li>
+              <li>15x - System/Acceptance Testing</li>
+              <li>30x - Production/Post-release</li>
+						</ul>
+					</div>
+					<p>Source: <a href="https://www.browserstack.com/guide/what-is-shift-left-testing" target="_blank" title="Link opens in a new window">BrowserStack <span class="visuallyhidden"> opens in a new window</span></a></p>
+				</section>        
+
+        <section>
+					<h3>How do I code for accessibility?</h3>
+					<h4>HTML</h4>
+					<img src="images/wallace-gromit.jpg" alt="Wallace &amp; Gromit" style="position: absolute; right: 0;" />
+					<ul style="padding-right: 30%;">
+            <li>Automated scanning</li>
+            <li>Headings &amp; Semantic Structure</li>
+						<li>Form Labels &amp; Text Alternatives</li>
+						<li>Tab Index</li>
+						<li>External link indicators</li>
+					</ul>
+				</section>
+
+        <section>
+					<h3>Automated Scanning</h3>
+					<ul>
+						<li>axe DevTools, Lighthouse, Microsoft Accessibility Insights, and Wave scan the DOM.</li>
+						<li>Automation can catch most, but not all accessibility issues.</li>
+            <li>Limitations: dynamic content, color contrast, content quality</li>
+					</ul>
+				</section>
+
+        <section>
+          <h3>Automated scanner demo</h3>
+          <p><a href="https://www.deque.com/axe/browser-extensions/" target="_blank">axe DevTools<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+				<section>
+					<h3>HTML Headings</h3>
+					<p>Semantic structure is one of the most important usability features for screen reader users, as it helps them more easily understand and navigate the page structure. Headings also help <em>all</em> your users can and understand content.</p>
+          <ul>
+            <li>Headings should visually appear like headings,</li>
+            <li>Not everything that looks like a heading should be a heading.</li>
+          </ul>
+<pre><code class="html">
+&lt;h1&gt;Most important&lt;/h1&gt;
+&lt;h2&gt;Next most important&lt;/h2&gt;
+&lt;h3&gt;Third most important&lt;/h3&gt;
+&lt;h4&gt;Other heading&lt;/h4&gt;
+</code></pre>
+          <aside class="notes">The metaphor of an outline for a paper or article is helpful here.</aside>
+				</section>
+
+        <section>
+          <h3>Headings Demo</h3>
+          <p><a href="https://chrispederick.com/work/web-developer/" target="_blank">Web Developer Toolbar<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">
+            <p>Web Developer Extension demo</p>
+          </aside>
+        </section>
+
+				<section>
+					<h3>Form Labels</h3>
+					<h4>How do they work?</h4>
+					<!-- explanation here -->
+					<div class="code-example">
+						<label for="name-field">Name</label>
+						<input type="text" id="name-field" name="name-field" placeholder="Type your furry friend's name" />
+						<div class="float">
+							<input type="radio" id="species-dog" name="species" />
+							<label for="species-dog">Dog</label>
+						</div>
+						<div class="float">
+							<input type="radio" id="species-cat" name="species" />
+							<label for="species-cat">Cat</label>
+						</div>
+						<div class="clear"></div>
+					</div>
+<pre><code class="html" data-trim>&lt;label for="name-field"&gt;Name&lt;/label&gt;
+&lt;input type="text" id="name-field" name="name-field" 
+  placeholder="Type your furry friend's name"&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h3>Let's develop it</h3>
+					<h4>Add labels to an HTML form</h4>
+<pre><code class="html" data-trim>&lt;label for="name-field"&gt;Label&lt;/label&gt;
+&lt;input type="text" id="name-field"
+name="name-field" placeholder="Type your name" /&gt;
+</code></pre>
+				</section>
+
+				<section>
+					<h3>External Links</h3>
+					<h4>Provide affordances to warn users.</h4>
+					<img src="images/dont-make-me-think.jpg" alt="Don't Make Me Think by Steve Krug" style="float: right;max-width:25%;" class="nonbordered" />
+					<p>Opening new windows automatically when a link is activated can be disorienting for people who have difficulty perceiving visual content, and for some people with cognitive disabilities, if they are not warned in advance.</p>
+					<img src="images/how-i-audit-a-website-external-link.png" alt="How I Audit a Website for Accessibility external link indicator" class="nonbordered" />
+				</section>
+
+				<section>
+					<h3>External Links</h3>
+					<h4>Let's Look at Some Code</h4>
+<pre><code class="html" data-trim>
+&lt;a href="goofy.html"&gt;Goofy page&lt;a&gt;
+
+&lt;a href="http://disney.com" target="_blank"
+aria-describedby="Opens in a new window"
+class="external-link"&gt;
+Disney.com
+&lt;span class="offscreen"&gt;
+opens in a new window
+&lt;span&gt;
+&lt;/a&gt;
+</code></pre>
+					<p>For links that open in new windows, an offscreen <code>span</code> inside the link is most reliable for screen readers, but <code>aria-describedby=""</code> can also be used.</p>
+          <aside class="notes">A common problem cited in the WebAIM survey is “unexpected screen changes”. Discuss how to warn users of links that open in new windows with offscreen text and title attributes. Include a discussion about how it's really about usability in general. Recommended reading: “Don't Make Me Think” by Steve Krug</aside>
+				</section>
+
+				<section>
+					<h3>Tab Index</h3>
+					<h4>What is it?</h4>
+					<p>The <code>tabindex</code> attribute explicitly defines the tab order for focusable elements within a page. It can be used to define whether elements should be focusable. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+					<div style="padding-top:20px;">
+						<h4 tabindex="0">Focusable Heading</h4>
+						<a href="#" tabindex="-1">Link focusable only by script</a>
+						<div tabindex="0">Focusble div</div>
+					</div>
+					<aside class="notes">
+            <p>Explain tab order. Show a demo of tabIndex=”” attributes on native and non-native elements to show how it affects the flow of a document (anchor, input, div, heading, etc.). Explain tab index values of -1, 0 and 1+ their specific purposes</p>
+          </aside>
+				</section>
+
+				<section>
+					<h3>Let's Develop It</h3>
+					<h4>Explore tab-index on native and non-native elements</h4>
+<pre><code class="html" data-trim>&lt;h1 tabindex="0"&gt;Focusable Heading&lt;h1&gt;
+&lt;a href="#" tabindex="-1"&gt;Link focusable only by script&lt;/a&gt;
+&lt;div tabindex="1"&gt;Div tabbable in new order&lt;div&gt;
+</code></pre>
+          <p><a href="https://codepen.io/mjawili/full/poxzwad" target="_blank">Codepen: tabindex <span class="visuallyhidden"> opens in a new window</span></a></p>
+					<p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
+          <aside class="notes">Explicitly mention the pitfalls of positive tabindex values, including the extra maintance and testing. Tabindex is like z-index; any positive value will supercede everything else on the page.</aside>
+				</section>
+
+				<section>
+					<h3>How do I code for accessibility?</h3>
+					<h4>CSS</h4>
+					<ul>
+						<li>Visually Hidden Content</li>
+						<li>Really Hidden</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Visually Hidden Content</h3>
+					<h4>How does it work?</h4>
+<pre><code class="css" data-trim>/* Hide only visually, but have it available for screenreaders.
+Copied from HTML5 Boilerplate*/
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+</code></pre>
+						<p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
+					</section>
+
+					<section>
+						<h3>Really Hidden</h3>
+						<h4>How to show and hide content from all users</h4>
+<pre><code class="css" data-trim>.reallyHidden {
+	display: none;
+	visibility: hidden;
+}
+.notHidden {
+	display: block;
+	visibility: visible;
+}
+</code></pre>
+					</section>
+
+          <section>
+            <h2 style="font-size: 1.3em">Home pages with most common WCAG failures (% of home pages)</h2>
+            <div id="webaim-survey-problematic-items" style="background: url(images/webaim-million.png) no-repeat center top; background-size: 75% auto; padding-top: 50%; width: 100%;">
+              <ul class="visuallyhidden">
+                <li>83.6% - Low contrast text</li>
+                <li>58.2% - Missing alternative text</li>
+                <li>50.1% - Empty links</li>
+                <li>45.9% - Missing form labels</li>
+                <li>27.5% - Empty buttons</li>
+                <li>18.6% - Missing document language</li>
+              </ul>
+            </div>
+            <p>Source: <a href="https://webaim.org/projects/million/#errors" target="_blank" title="Link opens in a new window">The 2023 WebAIM Million report <span class="visuallyhidden"> opens in a new window</span></a></p>
+            <aside class="notes">Introduce the WebAIM Screen Reader survey and show the common problems.</aside>
+          </section>
+
+					<section>
+						<h3>Let's Develop It</h3>
+						<p>Explore keyboard navigation with content that is hidden and offscreen</p>
+					</section>
+
+					<section>
+						<h3>How do I code for accessibility?</h3>
+						<h4>Accessible Rich <br>Internet Applications</h4>
+						<ul>
+              <li>First rule of ARIA: Don't use ARIA.</li>
+							<li>Expands HTML's native vocabulary.</li>
+							<li>Communicates state and purpose to assistive technologies.</li>
+							<li>Used mainly for custom widgets and web applications.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>ARIA Attributes</h3>
+            <ul>
+              <li class="fragment">Name: What is this thing called?</li>
+              <li class="fragment">Role: What does this thing do?</li>
+              <li class="fragment">State: What is the current condition of this particular thing?</li>
+              <li class="fragment">Properties: What is the nature of this thing?</li>
+            </ul>
+<pre><code class="html xml">&lt;div aria-label="Tomatoes"
+  role="checkbox"
+  aria-checked="true"
+  aria-disabled="true"&gt;</code></pre>
+					</section>
+
+
+        <section>
+          <h3>ARIA demo</h3>
+          <p>Chrome Developer Tools Accessibility panel</p>
+        </section>
+
+        <section>
+          <h3>Video</h3>
+          <p><a href="https://www.youtube.com/watch?v=U9NJwiNZbn0" target="_blank">The Greatest (Audio Descriptions) | Apple</a></p>
+        </section>
+
+        <section>
+          <h3>Show your users some love!</h3>
+          <img src="images/handicappedlove.jpg" alt="Disabled parking symbol with a heart" />
+          <p class="credit">Photo credit: <a href="http://www.flickr.com/photos/samfelder/115576714/" target="_blank">Sam Felder<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
+        </section>
+
+        <!-- Course Conclusion -->
+        <section>
+          <h3>You did it!</h3>
+          <img
+            src="../shared-assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"
+            alt="People celebrating" />
+          <div>
+            <small
+              >Photo credit:
+              <a
+                href="https://unsplash.com/@hannahbusing"
+                target="_blank"
+                >Hannah Busing</a
+              >
+              <a
+                href="http://creativecommons.org/licenses/by-sa/2.0/"
+                target="_blank"
+                >cc</a
+              >
+            </small>
+          </div>
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts" target="_blank">Voiceover keyboard shortcuts<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts" target="_blank">NVDA keyboard shortcuts<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://www.tpgi.com/color-contrast-checker/" target="_blank">Colour Contrast Analyser<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_blank">WCAG 2.1 Understanding Docs<span class="visuallyhidden"> opens in a new window</span></a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Resources, continued</h3>
+          <ul>
+            <li><a href="http://webaim.org/projects/screenreadersurvey4/" target="_blank">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://www.deque.com/axe/browser-extensions/" target="_blank">axe DevTools<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://chrispederick.com/work/web-developer/" target="_blank">Web Developer Toolbar<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://www.w3.org/TR/wai-aria-1.1/" target="_blank">ARIA 1.2<span class="visuallyhidden"> opens in a new window</span></a></li>
+            <li><a href="https://www.w3.org/WAI/ARIA/apg/" target="_blank">ARIA Authoring Practices Guide<span class="visuallyhidden"> opens in a new window</span></a></li>
+          </ul>
+        </section>
+
+        <!-- MUST-USE SLIDE -->
+        <!-- Add Course Survey Link -->
+        <section>
+          <h3>Give Us Your Feedback</h3>
+          <h3><a href="https://bit.ly/3zy6HAM">Course Survey</a></h3>
+        </section>
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- MUST-USE SLIDE -->
+        <!-- Promote Upcoming GDI Courses -->
+        <section>
+          <h3>Upcoming GDI Courses</h3>
+          <ul>
+            <li>Python Web Apps</li>
+            <li>Intro to HTML and CSS</li>
+            <li>Intro to JavaScript</li>
+          </ul>
+          <p>
+            <a
+              href="https://girldevelopit.com/events/#/list"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GDI Classes and Events Calendar</a
+            >
+          </p>
+        </section>
+
+        <!-- Add Instructor and/or TA Contact -->
+        <section>
+          <h3>Keep in Touch</h3>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder" />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>Web Accessibility</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
+</html>
